@@ -241,7 +241,7 @@ body {
     justify-content: space-evenly;
 }
 
-.inputOption {
+.inputOptions {
     display: flex;
     align-items: center;
     margin-top: 15px;
