@@ -285,6 +285,29 @@ body {
     font-size: 15px;
 }
 
+.greyc {
+    color: #808080;
+}
+.hideele {
+    display: none;
+}
+
+.blue {
+    color: #378fe9;
+}
+
+.green {
+    color: #5f9b41;
+}
+
+.orange {
+    color: #c37d16;
+}
+
+.red {
+    color: #e16745;
+}
+
 
 /* Widgets */
 .widgets {
