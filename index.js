@@ -11,6 +11,8 @@ let res = document.getElementById('postbox')
     var value = document.getElementById("postbox").value;
     var text1 = document.createTextNode(value);
 
+    var name = document.getElementById("name").innerText;
+
     document.getElementById("postbox").value = '';
 
     var postdiv = document.createElement("div");
@@ -31,7 +33,7 @@ let res = document.getElementById('postbox')
     divpostinfo.classList.add("post-info");
 
     var h2tag = document.createElement("h2");
-    var h2text = document.createTextNode("Saria Mubeen");
+    var h2text = document.createTextNode(name);
     var ptag = document.createElement("p");
     var ptext = document.createTextNode("Php Developer");
 
@@ -56,13 +58,13 @@ let res = document.getElementById('postbox')
 
     postdiv.appendChild(divpostbody);
 
-    
-    // Like
-    var div2 = document.createElement("div");
-    div2.classList.add("feed-inputOptions");
 
-    var div3 = document.createElement("div");
-    div3.classList.add("inputOptions");
+    // Like
+    var divfeedinput = document.createElement("div");
+    divfeedinput.classList.add("feed-inputOptions");
+
+    var divinputoptions1 = document.createElement("div");
+    divinputoptions1.classList.add("inputOptions");
 
     var itag2 = document.createElement("i");
     itag2.classList.add("material-icons");
@@ -75,16 +77,16 @@ let res = document.getElementById('postbox')
     var liketext = document.createTextNode("Like");
     h4like.appendChild(liketext);
 
-    div3.appendChild(itag2);
-    div3.appendChild(h4like);
+    divinputoptions1.appendChild(itag2);
+    divinputoptions1.appendChild(h4like);
 
-    div2.appendChild(div3); 
-    postdiv.appendChild(div2);
+    divfeedinput.appendChild(divinputoptions1); 
+    postdiv.appendChild(divfeedinput);
 
 
     // Comment
-    var div5 = document.createElement("div");
-    div5.classList.add("inputOptions");
+    var divinputoptions2 = document.createElement("div");
+    divinputoptions2.classList.add("inputOptions");
 
     var itag3 = document.createElement("i");
     itag3.classList.add("material-icons");
@@ -97,15 +99,15 @@ let res = document.getElementById('postbox')
     var commenttext = document.createTextNode("Comment");
     h4comment.appendChild(commenttext);
 
-    div5.appendChild(itag3);
-    div5.appendChild(h4comment);
+    divinputoptions2.appendChild(itag3);
+    divinputoptions2.appendChild(h4comment);
 
-    div2.appendChild(div5);
+    divfeedinput.appendChild(divinputoptions2);
 
 
     // Share
-    var div6 = document.createElement("div");
-    div6.classList.add("inputOptions");
+    var divinputoptions3 = document.createElement("div");
+    divinputoptions3.classList.add("inputOptions");
 
     var itag4 = document.createElement("i");
     itag4.classList.add("material-icons");
@@ -118,15 +120,15 @@ let res = document.getElementById('postbox')
     var sharetext = document.createTextNode("Share");
     h4share.appendChild(sharetext);
 
-    div6.appendChild(itag4);
-    div6.appendChild(h4share);
+    divinputoptions3.appendChild(itag4);
+    divinputoptions3.appendChild(h4share);
 
-    div2.appendChild(div6);
+    divfeedinput.appendChild(divinputoptions3);
 
 
     // Send
-    var div7 = document.createElement("div");
-    div7.classList.add("inputOptions");
+    var divinputoptions4 = document.createElement("div");
+    divinputoptions4.classList.add("inputOptions");
 
     var itag5 = document.createElement("i");
     itag5.classList.add("material-icons");
@@ -139,10 +141,10 @@ let res = document.getElementById('postbox')
     var sendtext = document.createTextNode("Send");
     h4send.appendChild(sendtext);
 
-    div7.appendChild(itag5);
-    div7.appendChild(h4send);
+    divinputoptions4.appendChild(itag5);
+    divinputoptions4.appendChild(h4send);
 
-    div2.appendChild(div7);
+    divfeedinput.appendChild(divinputoptions4);
 
     // document.getElementById('allposts').appendChild(postdiv);
     // insert at end
